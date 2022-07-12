@@ -1,0 +1,77 @@
+#pagamento{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 28px;
+    font-size: 35px;
+}
+
+
+
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 10px;
+}
+
+.form-label, .form-control {
+    margin-top: 5px;
+    margin-left: 3px;
+}
+#botao{
+    left: 50px;
+}
+
+*{
+    margin: 0;
+}
+
+.menuLateral{
+    background: black;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+}
+
+.menuLateral .titulo{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 24px;
+    border-radius: 2px solid red;
+}
+.menuLateral ul{
+    list-style: none;
+}
+
+.menuLateral ul li{
+    line-height: 40px;
+    border-bottom: 1px solid white;
+}
+.menuLateral ul li a{
+    color: wheat;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.menuLateral ul li a:hover{
+    transition: 0.5s;
+    background-color: #373737;
+
+}
+
+.menuLateral ul ul li a{
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 60px;
+    background-color: #131313
+    ;
+}
+.menuLateral ul ul{
+    display: none;
+}
+
+.menuLateral ul .produtos.mostra{
+    display: block;
+}
