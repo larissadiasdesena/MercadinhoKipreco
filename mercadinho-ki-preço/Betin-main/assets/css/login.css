@@ -1,0 +1,38 @@
+#login{
+    color: #0e3bef;
+    text-align: center;
+    padding: 80px;
+}
+
+
+#lembrar{
+    padding: 20px;
+}
+
+#text{
+    width: 500px;
+
+    position: relative;
+    left: 200px;
+  
+    height: 40px;
+    border-left: none;
+    width:  500px;
+}
+
+#lupa{
+    position: relative;
+    left: 205px;
+    right: 5px;
+    cursor: pointer;
+    background: white;
+    height: 40px;
+    border-right: none;
+    width:  40px;
+
+}
+
+.img-carrosel{
+    height: 300px;
+    margin-top: 20px;
+}

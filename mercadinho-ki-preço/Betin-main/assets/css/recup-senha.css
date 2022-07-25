@@ -1,0 +1,38 @@
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-recuperar {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+}
+
+#text{
+    width: 500px;
+
+    position: relative;
+    left: 200px;
+  
+    height: 40px;
+    border-left: none;
+    width:  500px;
+}
+
+#lupa{
+    position: relative;
+    left: 205px;
+    right: 5px;
+    cursor: pointer;
+    background: white;
+    height: 40px;
+    border-right: none;
+    width:  40px;
+
+}
+
+.img-carrosel{
+    height: 300px;
+    margin-top: 20px;
+}

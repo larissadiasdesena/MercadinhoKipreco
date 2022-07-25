@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+
+
+<link rel="stylesheet" href="cadastro.css">
+
+</head>
+
+<body>
+ 
+    <header class="cabecalho ">
+        <div class="container-fluid">
+   
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div >
+            <span > Supermercado KiPreço</span>
+            <button id="lupa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+          <input type="text" id="text">
+          </div>
+  
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <ul class="navbar-nav">
+                <li><a class="nav-item nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-item nav-link" href="produtos.html">Produtos</a></li>
+                <li><a class="nav-item nav-link" href="login.html">Login</a></li>
+                <li><a class="nav-item nav-link" href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+          
+          </nav>
+    
+        </div>
+  
+    </header>
+
+
+        <main>
+            <div class="container-fluid">
+        
+        
+        
+
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3" id="pagamento">Dados Para Cadastro</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Primeiro Nome</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                        Nome Requerido.
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Sobre Nome</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                        Sobre nome requerido
+                        </div>
+                    </div>
+                
+                    </div>                                                      
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="Endereço" class="form-label">Endereço Completo</label>
+                            <input type="text" class="form-control" id="Endereço" placeholder="Rua,Número, bairro,cidade,Estado" value="" required>
+                            <div class="invalid-feedback">
+                            Endereço Requerido Requerido.
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-6">
+                            <label for="cep" class="form-label">CEP</label>
+                            <input type="number" class="form-control" id="cep" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                            CEP requerido
+                            </div>
+                        </div>
+                    
+                        </div>
+            
+        
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email </label>
+                        <input type="email" class="form-control" id="email" placeholder="seuemail@examplo.com">
+                        <div class="invalid-feedback">
+                        Por favor entre com uma conta de email válida! 
+                        </div>
+                    </div>
+                    <br>
+                    <hr class="my-4">
+
+                    <h4>Dados Para Pagamento</h4>
+                    <div class="my-3">
+                    <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                        <label class="form-check-label" for="credit">Cartão de Débito</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="debit">Cartão de Crédito</label>
+                    </div>
+            
+                    </div>
+        
+                    <div class="row gy-3">
+                    <div class="col-md-6">
+                        <label for="cc-name" class="form-label"> Nome no Cartão</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                        
+                        <div class="invalid-feedback">
+                        
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="cc-number" class="form-label">Número do Cartão de crédito</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback"> 
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <label for="cc-expiration" class="form-label">Data de validade</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback">
+                        data requerida
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <label for="cc-cvv" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback">
+                        codigo requerido
+                        </div>
+                    </div>
+                    </div>
+        
+                    <hr class="my-4">
+        
+                    <button class="w-25 btn btn-primary btn-lg " id="botao" type="submit">Cadastrar</button>
+                </form>
+            </div>
+            </div>
+            
+            </div>
+        </main>
+        
+        <footer  id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="container-fluid">
+            <div class="b-example-divider"></div>
+
+                
+
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+            </a>
+            <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">Mercadino Kipreço&nbsp;© 2022</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+
+        
+            </div>
+        </footer> 
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+</body>
+</html>

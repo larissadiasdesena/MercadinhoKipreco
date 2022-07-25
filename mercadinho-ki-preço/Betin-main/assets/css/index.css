@@ -1,0 +1,48 @@
+#text{
+    width: 500px;
+
+    position: relative;
+    left: 200px;
+  
+    height: 40px;
+    border-left: none;
+    width:  500px;
+}
+
+#lupa{
+    position: relative;
+    left: 205px;
+    right: 5px;
+    cursor: pointer;
+    background: white;
+    height: 40px;
+    border-right: none;
+    width:  40px;
+
+}
+
+.img-carrosel{
+    height: 300px;
+    margin-top: 20px;
+}
+
+#bolinhas{
+    padding-top: 40px;
+    margin-right: 50px;
+}
+
+#bolinha3{
+    left: 150px;
+}
+
+#bolinha2{
+    left: 90px;
+}
+
+#img2{
+    left: 90px;
+}
+
+#bolinha1{
+    left: 60px;
+}
