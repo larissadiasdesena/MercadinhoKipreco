@@ -1,0 +1,26 @@
+#text{
+    width: 500px;
+
+    position: relative;
+    left: 200px;
+  
+    height: 40px;
+    border-left: none;
+    width:  500px;
+}
+
+#lupa{
+    position: relative;
+    left: 205px;
+    right: 5px;
+    cursor: pointer;
+    background: white;
+    height: 40px;
+    border-right: none;
+    width:  40px;
+
+}
+
+header{
+    background: rgba(115, 125, 129, 0.712);
+}
